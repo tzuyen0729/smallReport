@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,510 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="smallReport" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEc-f4-UeN">
+                                <rect key="frame" x="207" y="367" width="168" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="aJS-Qc-OYt">
+                                        <rect key="frame" x="0.0" y="0.0" width="168" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4It-U4-dHe">
+                                <rect key="frame" x="0.0" y="20" width="75" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fut-RD-yO4">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="62"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="新增照片"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="addImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F53-Hk-FBA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TzD-GI-zZX">
+                                        <rect key="frame" x="0.0" y="68" width="75" height="62"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="新增圖示"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="pickIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tXt-wz-okI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Wo-pY-OF7">
+                                        <rect key="frame" x="0.0" y="136" width="75" height="61.5"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="刪除選項"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deleteIcon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7a-QC-C1N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9r-dP-Wwn">
+                                        <rect key="frame" x="0.0" y="203.5" width="75" height="62"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="畫筆顏色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="choseDrawpan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xa4-rp-a1B"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3S6-bw-Tt8">
+                                        <rect key="frame" x="0.0" y="271.5" width="75" height="62"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="照片存檔"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wYy-v9-fDL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-Dt-gB6">
+                                <rect key="frame" x="0.0" y="359.5" width="75" height="66.5"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="功能表"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="doMgr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jab-gY-rMS"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhP-gg-5C2">
+                                <rect key="frame" x="75" y="20" width="300" height="66.5"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CAD-RE-oJe">
+                                <rect key="frame" x="81" y="86.5" width="294" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1w-BC-1ye">
+                                        <rect key="frame" x="0.0" y="0.0" width="69" height="67"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="花朵"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="flower:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXr-x0-2Q0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsA-F4-TaX">
+                                        <rect key="frame" x="75" y="0.0" width="69" height="67"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="葉子"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="leaf:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9JJ-rh-8Ji"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gef-nY-0q7">
+                                        <rect key="frame" x="150" y="0.0" width="69" height="67"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="亮光"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="light:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UV8-et-Ztg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU5-Nc-tqR">
+                                        <rect key="frame" x="225" y="0.0" width="69" height="67"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="蝴蝶"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="butterfly:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGB-B9-nlT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="gha-gO-Q89">
+                                <rect key="frame" x="81" y="153.5" width="294" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZh-tC-S0f">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="64"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="復原"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="undoLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3eo-Ha-9M4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bi-s2-IBi">
+                                        <rect key="frame" x="100" y="0.0" width="94" height="64"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="取消復原"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="redoLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Czj-hf-qOs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNt-gj-6xF">
+                                        <rect key="frame" x="200" y="0.0" width="94" height="64"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="全部刪除"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deleteAllLine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZu-tD-uP2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uhq-AJ-OGO">
+                                <rect key="frame" x="75" y="153.5" width="300" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccR-qL-Akk">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="flower1.png"/>
+                                        <connections>
+                                            <action selector="addF1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLh-lO-Xe3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pxb-cu-zvD">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="flower2.png"/>
+                                        <connections>
+                                            <action selector="addF2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Wr-rN-rph"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89O-vz-9Bp">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="flower3.png"/>
+                                        <connections>
+                                            <action selector="addF3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9p7-Kr-6NP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64M-1X-foh">
+                                        <rect key="frame" x="225" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="flower4.png"/>
+                                        <connections>
+                                            <action selector="addF4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQm-Z0-dWG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pfd-ba-L0L">
+                                <rect key="frame" x="75" y="153.5" width="300" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaC-zV-jIy">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="leaf1.png"/>
+                                        <connections>
+                                            <action selector="addLeaf1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wPE-9K-3Dq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEa-GK-MOC">
+                                        <rect key="frame" x="75" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="leaf2.png"/>
+                                        <connections>
+                                            <action selector="addLeaf2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R9s-go-epf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-2y-Upb">
+                                        <rect key="frame" x="150" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="leaf3.png"/>
+                                        <connections>
+                                            <action selector="addLeaf3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qYm-Bu-3ox"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-Bv-Qma">
+                                        <rect key="frame" x="225" y="0.0" width="75" height="66.5"/>
+                                        <state key="normal" backgroundImage="leaf4.png"/>
+                                        <connections>
+                                            <action selector="addLeaf4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="POY-kh-Hd7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0Hp-tC-VFr">
+                                <rect key="frame" x="81" y="153.5" width="294" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3M-6Q-Kg7">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="stars.png"/>
+                                        <connections>
+                                            <action selector="addLight1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtP-nF-qxd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNJ-qx-hVY">
+                                        <rect key="frame" x="73.5" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="moon.png"/>
+                                        <connections>
+                                            <action selector="addLight2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r7U-Y3-ObY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg8-xf-loK">
+                                        <rect key="frame" x="147" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="lightning.png"/>
+                                        <connections>
+                                            <action selector="addLight3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zTh-FF-gC7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmu-0G-xKy">
+                                        <rect key="frame" x="220.5" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="fullmoon.png"/>
+                                        <connections>
+                                            <action selector="addLight4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wdO-QK-vBS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1dP-52-xXE">
+                                <rect key="frame" x="81" y="153.5" width="294" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgT-Io-jBV">
+                                        <rect key="frame" x="0.0" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="butterfly1.png"/>
+                                        <connections>
+                                            <action selector="addButterfly1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bbR-De-QQz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIb-Dz-r0g">
+                                        <rect key="frame" x="73.5" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="butterfly2.png"/>
+                                        <connections>
+                                            <action selector="addButterfly2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DKd-ks-N29"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SVG-7O-Adk">
+                                        <rect key="frame" x="147" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="butterfly3.png"/>
+                                        <connections>
+                                            <action selector="addButterfly3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fO6-dW-fRG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="23Y-Bv-DjY">
+                                        <rect key="frame" x="220.5" y="0.0" width="73.5" height="66.5"/>
+                                        <state key="normal" backgroundImage="butterfly4.png"/>
+                                        <connections>
+                                            <action selector="addButterfly4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgt-y9-dpd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="39f-om-41D">
+                                <rect key="frame" x="81" y="217.5" width="294" height="66.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nK-F6-6aK">
+                                        <rect key="frame" x="0.0" y="0.0" width="54" height="66.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="藍色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="bluePan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XPb-fc-Tq0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFO-x0-nyS">
+                                        <rect key="frame" x="60" y="0.0" width="54" height="66.5"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="紅色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="redPan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jiu-Tc-2Fi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G87-Yu-Bq8">
+                                        <rect key="frame" x="120" y="0.0" width="54" height="66.5"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="黃色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yellowPan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yQr-l0-2fF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gau-jR-MZp">
+                                        <rect key="frame" x="180" y="0.0" width="54" height="66.5"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="綠色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="greenPan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDU-L1-CQe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLI-de-A7C">
+                                        <rect key="frame" x="240" y="0.0" width="54" height="66.5"/>
+                                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="咖啡色"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="coffeePan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OsW-eW-wNe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tda-Dt-gB6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="0Kv-CN-9Ou"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1dP-52-xXE" secondAttribute="trailing" id="0md-GT-yUf"/>
+                            <constraint firstItem="39f-om-41D" firstAttribute="leading" secondItem="4It-U4-dHe" secondAttribute="trailing" constant="6" id="1Fa-tp-HGk"/>
+                            <constraint firstItem="4It-U4-dHe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="21F-0K-Sls"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gha-gO-Q89" secondAttribute="trailing" id="2NW-dv-awO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uhq-AJ-OGO" secondAttribute="trailing" id="2oR-Ls-TLn"/>
+                            <constraint firstItem="uhq-AJ-OGO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="37W-Kb-Ag7"/>
+                            <constraint firstItem="4It-U4-dHe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="68v-Y5-Bf2"/>
+                            <constraint firstItem="uhq-AJ-OGO" firstAttribute="top" secondItem="CAD-RE-oJe" secondAttribute="bottom" id="84F-FN-ecn"/>
+                            <constraint firstItem="CAD-RE-oJe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="8uY-Bo-EbI"/>
+                            <constraint firstItem="Pfd-ba-L0L" firstAttribute="top" secondItem="CAD-RE-oJe" secondAttribute="bottom" id="95O-MU-dB2"/>
+                            <constraint firstItem="0Hp-tC-VFr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="ADS-Rs-mYH"/>
+                            <constraint firstItem="39f-om-41D" firstAttribute="top" secondItem="gha-gO-Q89" secondAttribute="bottom" id="Bib-fT-QSN"/>
+                            <constraint firstItem="4It-U4-dHe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EAe-yA-0qC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Hp-tC-VFr" secondAttribute="trailing" id="Fk4-zu-klA"/>
+                            <constraint firstItem="39f-om-41D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="IAv-16-QrF"/>
+                            <constraint firstItem="0Hp-tC-VFr" firstAttribute="leading" secondItem="4It-U4-dHe" secondAttribute="trailing" constant="6" id="KHn-yg-0xL"/>
+                            <constraint firstItem="CAD-RE-oJe" firstAttribute="leading" secondItem="4It-U4-dHe" secondAttribute="trailing" constant="6" id="L2Z-cL-qYA"/>
+                            <constraint firstItem="1dP-52-xXE" firstAttribute="top" secondItem="CAD-RE-oJe" secondAttribute="bottom" id="NqP-6C-qO8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CAD-RE-oJe" secondAttribute="trailing" id="OPb-df-UYa"/>
+                            <constraint firstItem="gha-gO-Q89" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.096" id="P7o-Ch-teA"/>
+                            <constraint firstItem="Pfd-ba-L0L" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="QSr-y9-G0s"/>
+                            <constraint firstItem="4It-U4-dHe" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="QXn-xa-r2R"/>
+                            <constraint firstItem="0Hp-tC-VFr" firstAttribute="top" secondItem="CAD-RE-oJe" secondAttribute="bottom" id="Stt-r7-FeX"/>
+                            <constraint firstItem="CAD-RE-oJe" firstAttribute="top" secondItem="VhP-gg-5C2" secondAttribute="bottom" id="Thb-iQ-NOW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VhP-gg-5C2" secondAttribute="trailing" id="WuF-Na-hkY"/>
+                            <constraint firstItem="tda-Dt-gB6" firstAttribute="top" secondItem="4It-U4-dHe" secondAttribute="bottom" constant="6" id="YMl-OS-q7v"/>
+                            <constraint firstItem="VhP-gg-5C2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="YU8-Gm-LDi"/>
+                            <constraint firstItem="gha-gO-Q89" firstAttribute="top" secondItem="CAD-RE-oJe" secondAttribute="bottom" id="Zr6-lc-dfk"/>
+                            <constraint firstItem="1dP-52-xXE" firstAttribute="leading" secondItem="4It-U4-dHe" secondAttribute="trailing" constant="6" id="boJ-0R-1rK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="39f-om-41D" secondAttribute="trailing" id="emw-mJ-ps4"/>
+                            <constraint firstItem="1dP-52-xXE" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="gob-3Y-GFM"/>
+                            <constraint firstItem="Pfd-ba-L0L" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="h0Z-Vu-vpa"/>
+                            <constraint firstItem="gha-gO-Q89" firstAttribute="leading" secondItem="4It-U4-dHe" secondAttribute="trailing" constant="6" id="hqP-K4-oN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Pfd-ba-L0L" secondAttribute="trailing" id="kvo-oC-gE6"/>
+                            <constraint firstItem="tda-Dt-gB6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lhJ-ur-A5y"/>
+                            <constraint firstItem="uhq-AJ-OGO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="qgo-VW-CYX"/>
+                            <constraint firstItem="VhP-gg-5C2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="sPA-ue-aVY"/>
+                            <constraint firstItem="tda-Dt-gB6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="tDs-Kd-MHz"/>
+                            <constraint firstItem="VhP-gg-5C2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="ynj-3l-7g4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnAddImg" destination="fut-RD-yO4" id="ZpF-tK-pE5"/>
+                        <outlet property="btnMgr" destination="tda-Dt-gB6" id="HsU-NB-TZT"/>
+                        <outlet property="butterflyView" destination="1dP-52-xXE" id="a4B-Or-IAi"/>
+                        <outlet property="drawpanView" destination="39f-om-41D" id="LNc-pD-GAn"/>
+                        <outlet property="flowerView" destination="uhq-AJ-OGO" id="94n-T9-DDs"/>
+                        <outlet property="imgView" destination="aJS-Qc-OYt" id="75e-co-XdR"/>
+                        <outlet property="leafView" destination="Pfd-ba-L0L" id="9Ac-ee-UBo"/>
+                        <outlet property="lightView" destination="0Hp-tC-VFr" id="yjV-QZ-27K"/>
+                        <outlet property="list1View" destination="4It-U4-dHe" id="pas-Om-QTA"/>
+                        <outlet property="list2View" destination="CAD-RE-oJe" id="YYj-q1-iRO"/>
+                        <outlet property="list3View" destination="gha-gO-Q89" id="edu-s5-UpR"/>
+                        <outlet property="myView" destination="dEc-f4-UeN" id="3vT-n6-2N1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg1.jpeg" width="168" height="300"/>
+        <image name="butterfly1.png" width="72" height="72"/>
+        <image name="butterfly2.png" width="72" height="72"/>
+        <image name="butterfly3.png" width="72" height="72"/>
+        <image name="butterfly4.png" width="72" height="72"/>
+        <image name="flower1.png" width="72" height="72"/>
+        <image name="flower2.png" width="72" height="72"/>
+        <image name="flower3.png" width="72" height="72"/>
+        <image name="flower4.png" width="72" height="72"/>
+        <image name="fullmoon.png" width="72" height="72"/>
+        <image name="leaf1.png" width="72" height="72"/>
+        <image name="leaf2.png" width="72" height="72"/>
+        <image name="leaf3.png" width="72" height="72"/>
+        <image name="leaf4.png" width="72" height="72"/>
+        <image name="lightning.png" width="72" height="72"/>
+        <image name="moon.png" width="72" height="72"/>
+        <image name="stars.png" width="128" height="128"/>
+    </resources>
 </document>

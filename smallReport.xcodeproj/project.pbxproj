@@ -12,6 +12,25 @@
 		CEC642FA1F8B630E00A406A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC642F81F8B630E00A406A5 /* Main.storyboard */; };
 		CEC642FC1F8B630E00A406A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC642FB1F8B630E00A406A5 /* Assets.xcassets */; };
 		CEC642FF1F8B630E00A406A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC642FD1F8B630E00A406A5 /* LaunchScreen.storyboard */; };
+		CEC643101F8B6A0900A406A5 /* flower1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6430A1F8B6A0100A406A5 /* flower1.png */; };
+		CEC643111F8B6A0900A406A5 /* flower2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643081F8B6A0100A406A5 /* flower2.png */; };
+		CEC643121F8B6A0900A406A5 /* flower3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643071F8B6A0100A406A5 /* flower3.png */; };
+		CEC643131F8B6A0900A406A5 /* flower4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6430B1F8B6A0100A406A5 /* flower4.png */; };
+		CEC643141F8B6A0900A406A5 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6430E1F8B6A0100A406A5 /* heart.png */; };
+		CEC643151F8B6A0900A406A5 /* leaf1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643091F8B6A0100A406A5 /* leaf1.png */; };
+		CEC643161F8B6A0900A406A5 /* leaf2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6430F1F8B6A0100A406A5 /* leaf2.png */; };
+		CEC643171F8B6A0900A406A5 /* leaf3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6430C1F8B6A0100A406A5 /* leaf3.png */; };
+		CEC643181F8B6A0900A406A5 /* leaf4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643061F8B6A0100A406A5 /* leaf4.png */; };
+		CEC643191F8B6A0900A406A5 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6430D1F8B6A0100A406A5 /* stars.png */; };
+		CEC6431D1F8B7E9F00A406A5 /* fullmoon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6431A1F8B7E9A00A406A5 /* fullmoon.png */; };
+		CEC6431E1F8B7E9F00A406A5 /* lightning.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6431C1F8B7E9A00A406A5 /* lightning.png */; };
+		CEC6431F1F8B7E9F00A406A5 /* moon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC6431B1F8B7E9A00A406A5 /* moon.png */; };
+		CEC643241F8BC4CC00A406A5 /* butterfly1.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643231F8BC4C700A406A5 /* butterfly1.png */; };
+		CEC643251F8BC4CC00A406A5 /* butterfly2.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643211F8BC4C600A406A5 /* butterfly2.png */; };
+		CEC643261F8BC4CC00A406A5 /* butterfly3.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643221F8BC4C700A406A5 /* butterfly3.png */; };
+		CEC643271F8BC4CC00A406A5 /* butterfly4.png in Resources */ = {isa = PBXBuildFile; fileRef = CEC643201F8BC4C600A406A5 /* butterfly4.png */; };
+		CEC6432C1F8BC89E00A406A5 /* bg1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEC6432B1F8BC89900A406A5 /* bg1.jpeg */; };
+		CEC6432D1F8BC8A100A406A5 /* bg2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CEC6432A1F8BC89800A406A5 /* bg2.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +41,25 @@
 		CEC642FB1F8B630E00A406A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC642FE1F8B630E00A406A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC643001F8B630E00A406A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC643061F8B6A0100A406A5 /* leaf4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf4.png; sourceTree = "<group>"; };
+		CEC643071F8B6A0100A406A5 /* flower3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower3.png; sourceTree = "<group>"; };
+		CEC643081F8B6A0100A406A5 /* flower2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower2.png; sourceTree = "<group>"; };
+		CEC643091F8B6A0100A406A5 /* leaf1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf1.png; sourceTree = "<group>"; };
+		CEC6430A1F8B6A0100A406A5 /* flower1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower1.png; sourceTree = "<group>"; };
+		CEC6430B1F8B6A0100A406A5 /* flower4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flower4.png; sourceTree = "<group>"; };
+		CEC6430C1F8B6A0100A406A5 /* leaf3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf3.png; sourceTree = "<group>"; };
+		CEC6430D1F8B6A0100A406A5 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
+		CEC6430E1F8B6A0100A406A5 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		CEC6430F1F8B6A0100A406A5 /* leaf2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaf2.png; sourceTree = "<group>"; };
+		CEC6431A1F8B7E9A00A406A5 /* fullmoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullmoon.png; sourceTree = "<group>"; };
+		CEC6431B1F8B7E9A00A406A5 /* moon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moon.png; sourceTree = "<group>"; };
+		CEC6431C1F8B7E9A00A406A5 /* lightning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightning.png; sourceTree = "<group>"; };
+		CEC643201F8BC4C600A406A5 /* butterfly4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly4.png; sourceTree = "<group>"; };
+		CEC643211F8BC4C600A406A5 /* butterfly2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly2.png; sourceTree = "<group>"; };
+		CEC643221F8BC4C700A406A5 /* butterfly3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly3.png; sourceTree = "<group>"; };
+		CEC643231F8BC4C700A406A5 /* butterfly1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly1.png; sourceTree = "<group>"; };
+		CEC6432A1F8BC89800A406A5 /* bg2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg2.jpeg; sourceTree = "<group>"; };
+		CEC6432B1F8BC89900A406A5 /* bg1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,25 @@
 		CEC642F31F8B630E00A406A5 /* smallReport */ = {
 			isa = PBXGroup;
 			children = (
+				CEC6432B1F8BC89900A406A5 /* bg1.jpeg */,
+				CEC6432A1F8BC89800A406A5 /* bg2.jpeg */,
+				CEC643231F8BC4C700A406A5 /* butterfly1.png */,
+				CEC643211F8BC4C600A406A5 /* butterfly2.png */,
+				CEC643221F8BC4C700A406A5 /* butterfly3.png */,
+				CEC643201F8BC4C600A406A5 /* butterfly4.png */,
+				CEC6431A1F8B7E9A00A406A5 /* fullmoon.png */,
+				CEC6431C1F8B7E9A00A406A5 /* lightning.png */,
+				CEC6431B1F8B7E9A00A406A5 /* moon.png */,
+				CEC6430A1F8B6A0100A406A5 /* flower1.png */,
+				CEC643081F8B6A0100A406A5 /* flower2.png */,
+				CEC643071F8B6A0100A406A5 /* flower3.png */,
+				CEC6430B1F8B6A0100A406A5 /* flower4.png */,
+				CEC6430E1F8B6A0100A406A5 /* heart.png */,
+				CEC643091F8B6A0100A406A5 /* leaf1.png */,
+				CEC6430F1F8B6A0100A406A5 /* leaf2.png */,
+				CEC6430C1F8B6A0100A406A5 /* leaf3.png */,
+				CEC643061F8B6A0100A406A5 /* leaf4.png */,
+				CEC6430D1F8B6A0100A406A5 /* stars.png */,
 				CEC642F41F8B630E00A406A5 /* AppDelegate.swift */,
 				CEC642F61F8B630E00A406A5 /* ViewController.swift */,
 				CEC642F81F8B630E00A406A5 /* Main.storyboard */,
@@ -123,8 +180,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC643141F8B6A0900A406A5 /* heart.png in Resources */,
+				CEC643121F8B6A0900A406A5 /* flower3.png in Resources */,
+				CEC643161F8B6A0900A406A5 /* leaf2.png in Resources */,
+				CEC643151F8B6A0900A406A5 /* leaf1.png in Resources */,
+				CEC6431F1F8B7E9F00A406A5 /* moon.png in Resources */,
+				CEC6432D1F8BC8A100A406A5 /* bg2.jpeg in Resources */,
+				CEC643241F8BC4CC00A406A5 /* butterfly1.png in Resources */,
+				CEC643171F8B6A0900A406A5 /* leaf3.png in Resources */,
+				CEC6431D1F8B7E9F00A406A5 /* fullmoon.png in Resources */,
+				CEC643131F8B6A0900A406A5 /* flower4.png in Resources */,
+				CEC6431E1F8B7E9F00A406A5 /* lightning.png in Resources */,
+				CEC643251F8BC4CC00A406A5 /* butterfly2.png in Resources */,
+				CEC6432C1F8BC89E00A406A5 /* bg1.jpeg in Resources */,
+				CEC643111F8B6A0900A406A5 /* flower2.png in Resources */,
+				CEC643191F8B6A0900A406A5 /* stars.png in Resources */,
 				CEC642FF1F8B630E00A406A5 /* LaunchScreen.storyboard in Resources */,
+				CEC643181F8B6A0900A406A5 /* leaf4.png in Resources */,
+				CEC643261F8BC4CC00A406A5 /* butterfly3.png in Resources */,
 				CEC642FC1F8B630E00A406A5 /* Assets.xcassets in Resources */,
+				CEC643101F8B6A0900A406A5 /* flower1.png in Resources */,
+				CEC643271F8BC4CC00A406A5 /* butterfly4.png in Resources */,
 				CEC642FA1F8B630E00A406A5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
